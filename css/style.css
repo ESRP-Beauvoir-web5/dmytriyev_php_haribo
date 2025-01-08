@@ -1,0 +1,179 @@
+body{
+    background-color: #2f3848;
+}
+
+header, section, footer{
+    width: 80%;
+    margin: 1rem auto;
+}
+
+/* Header */
+h1{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    font-size: 3rem;
+    border-bottom: 2px solid white;
+    border-radius: 0.3em;
+}
+
+header h1 img{
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+header{
+    position: relative;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#navlinks a{
+    color: yellowgreen;
+    font-weight: bold;
+    padding-right: 1.5em;
+}
+
+#social_links img{
+    height: 1.5em;
+}
+
+/* Section présentation */
+
+#presentation h2{
+    color: #00ccff;
+}
+
+#presentation p{
+    color: white;
+    font-weight: bold;
+    font-size: 0.8em;
+
+}
+
+#presentation p a{
+    color: yellowgreen;
+    text-decoration: underline;
+}
+
+/* Section semaine */
+
+#semaine{
+    display: flex;
+    justify-content: center;
+    border: #00ccff 1px solid;
+    position: relative;
+    padding: 2rem;
+}
+
+figure figcaption{
+    top: 0em;
+    left: 0em;
+    background-color: #f05768;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.1em 1em;
+    position: absolute;
+    top: 0em;
+    left: 0em;
+}
+
+/* Section principale */
+#principale{
+    display: flex;
+    flex-flow: nowrap row;
+    margin-bottom: 3em;
+}
+
+/* #galerie{
+    display: flex;
+    flex-flow: wrap row;
+    width: 66%;
+
+}
+
+#galerie img{
+    width: 25%;
+    padding-right: 0.2em;
+    padding-bottom: 0.2em;
+} */
+
+#galerie{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 1rem;
+    justify-items: center;
+}
+
+#galerie img:first-child{
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+#galerie img{
+    width: 100%;
+}
+
+#galerie img:hover{
+    transform: scale(2);
+    transition-duration:  0.5s;
+}
+
+#contact{
+    display: flex;
+    width: 34%;
+    flex-flow: wrap column;
+    background-color: #004488;
+    padding: 1em;
+    margin-left: 1.5em;
+    height: min-content;
+}
+
+#contact h3{
+    color: #00ccff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+}
+
+#contact p{
+    color: yellowgreen;
+}
+
+#contact a{
+    text-decoration: underline;
+    color: yellowgreen;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    color: #00ccff;
+    font-size: 0.8em;
+}
+
+@keyframes heartbeat {
+    from {
+      opacity: 0; 
+      font-size: 2rem;
+    }
+    to {
+      opacity: 1;
+      font-size: 3rem;
+    }
+  }
+  
+  .heart {
+    animation-name: heartbeat;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
