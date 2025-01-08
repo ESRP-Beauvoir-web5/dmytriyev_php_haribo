@@ -1,5 +1,6 @@
 <?php
-    include "header.php";
+    include("header.php");
+    var_dump($_POST);
 ?>
     <main>
         <section id="presentation">
@@ -15,4 +16,4 @@
         </section>
     </main> 
 <?php
-    include "footer.php";
+    include("footer.php");

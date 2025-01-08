@@ -1,5 +1,5 @@
 <?php
-    include "header.php";
+    include("header.php");
 ?>
     <main>
         <section id="principale">
@@ -38,4 +38,4 @@
     </main>
 
 <?php
-    include "footer.php";
+    include("footer.php");
