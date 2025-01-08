@@ -4,7 +4,7 @@
     <main>
         <section id="principale">
             <div id="galerie">
-                <img src="../images/haribo01.png" alt="Goldebears">
+                <!-- <img src="../images/haribo01.png" alt="Goldebears">
                 <img src="../images/haribo02.png" alt="Happy Life">
                 <img src="../images/haribo03.png" alt="Rainbow Pik">
                 <img src="../images/haribo04.png" alt="Croco">
@@ -24,7 +24,20 @@
                 <img src="../images/haribo18.png" alt="Happy Cola">
                 <img src="../images/haribo19.png" alt="Dragibus Party Pik">
                 <img src="../images/haribo20.png" alt="Car en Sac">                
-                <img src="../images/haribo21.png" alt="Orangina Pik">                
+                <img src="../images/haribo21.png" alt="Orangina Pik"> -->
+                <?php 
+                    // for($i=1; $i<22; $i++){
+                    //     echo "<img src='../images/haribo".sprintf("%02d", $i).".png' alt='Haribo ".sprintf("%02d", $i)."'>";  // sprintf("%02d", $i) ajoute un zéro devant les chiffres inférieurs à deux digits    
+                    // }
+                    for($i=1; $i<22; $i++):
+                        if($i<10):
+                        $i="0".$i;
+                        endif;   
+                ?>
+                    <img src="../images/haribo"<?=$i?>.png alt="image haribo<?=$i?>">
+                <?php         
+                    endfor;
+                ?>
             </div>
             <div id="contact">
                 <h3>soumettez vos photos de Haribos</h3>
